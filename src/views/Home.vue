@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <HelloWorld msg="Lista de videos"/>
   </div>
+  
 </template>
 
 <script>
@@ -16,3 +17,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.home {
+  text-align: left;
+  padding-left: 15px;
+}
+
+
+</style>

@@ -1,9 +1,14 @@
 <template>
   <div id="app">
+    
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link>
+      
+      <router-link to="/">Video TV</router-link > |
+
+      <div id="addmv">
+      <router-link to="/vermapa">Ver mapa</router-link> |
+      <router-link to="/avideo">Agregar video</router-link>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -16,15 +21,27 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
 
 #nav {
   padding: 30px;
+  margin: 15px;
+  background-color: #fd5151;
+  display: flex;
+}
+
+#addmv {
+    padding-top: 15px;
+    position: absolute;   
+    left: 825px;
+    font-size: 16px;
+    top: 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
 
 #nav a.router-link-exact-active {
